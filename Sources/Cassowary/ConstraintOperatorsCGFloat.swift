@@ -31,7 +31,7 @@
  
  */
 
-import Foundation
+import CoreGraphics
 
 extension Term {
     convenience init(variable: Variable, coefficient: CGFloat) {

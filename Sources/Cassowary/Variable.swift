@@ -81,9 +81,9 @@ extension Variable: Equatable {
 // MARK: Hashable
 extension Variable: Hashable {
 
-    public var hashValue: Int {
+    public func hash(into hasher: inout Hasher) {
         // Return a hash 'unique' to this object
-        return ObjectIdentifier(self).hashValue
+        hasher.combine(ObjectIdentifier(self))
     }
 
 }
